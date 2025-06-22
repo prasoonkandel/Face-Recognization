@@ -10,7 +10,7 @@ faces = face_cascade.detectMultiScale(gray, 1.1, 4)
 for x, y, w, h in faces:
     cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
 
-# cv2.imshow("image", img)
-cv2.waitKey(0)
 cv2.imwrite(f"./detected/{img_name}", img)
+cv2.imshow("image", img)
+cv2.waitKey(0)
 cv2.destroyAllWindows()
