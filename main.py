@@ -1,4 +1,4 @@
-# Please give star to this repo
+# Please give star to this repo if you like it.
 import cv2
 face_cascade = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
